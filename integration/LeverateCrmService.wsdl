@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://www.leverate.com/api/binding" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://www.leverate.com/crm/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:i1="http://tempuri.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://www.leverate.com/crm/" name="LeverateCrmService">
+	<wsdl:import location="http://lfs.tradingcrm.com:8085/mex?wsdl=wsdl1" namespace="http://www.leverate.com/api/binding"/>
+	<wsdl:import location="http://lfs.tradingcrm.com:8085/mex?wsdl=wsdl2" namespace="http://tempuri.org/"/>
+	<wsdl:types/>
+	<wsdl:service name="LeverateCrmService">
+		<wsdl:port name="CrmServiceEndpoint" binding="i0:CrmServiceEndpoint">
+			<soap12:address location="http://lfs.tradingcrm.com:8085/CrmService"/>
+			<wsa10:EndpointReference>
+				<wsa10:Address>http://lfs.tradingcrm.com:8085/CrmService</wsa10:Address>
+				<Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+					<KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+						<X509Data>
+							<X509Certificate>LFS.tradingcrm.com</X509Certificate>
+						</X509Data>
+					</KeyInfo>
+				</Identity>
+			</wsa10:EndpointReference>
+		</wsdl:port>
+		<wsdl:port name="CrmServiceEndpointSSL" binding="i0:CrmServiceEndpointSSL">
+			<soap12:address location="https://lfs.tradingcrm.com:8086/CrmService"/>
+			<wsa10:EndpointReference>
+				<wsa10:Address>https://lfs.tradingcrm.com:8086/CrmService</wsa10:Address>
+			</wsa10:EndpointReference>
+		</wsdl:port>
+		<wsdl:port name="CrmServiceEndpointBasicSSL" binding="i1:CrmServiceEndpointBasicSSL">
+			<soap:address location="https://lfs.tradingcrm.com:8086/CrmServiceBasic"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

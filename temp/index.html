@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>BWM</title>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link type="image/x-icon" href="images/favicon.ico" rel="icon">
+		<link href="images/favicon.ico" rel="shortcut icon">
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic,300italic,300,500italic,500' rel='stylesheet' type='text/css' />
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,400italic,700,700italic,300' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="css/jquery-ui-1.10.3-smoothness.min.css" />
+		<link rel="stylesheet" href="css/Site.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/lt9.css" />
+			<script src="js/PIE.js"></script>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		<!--[if IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+		<div class="main-holder">
+			<div class="widgets">
+				<div class="col hidden-xs">
+					<div class="box box02">
+						<div class="box-content direction-area">
+							<h3><i class="ico-social">&nbsp;</i>WHAT OTHER TRADERS DO</h3>
+							<div id="social_feed_widget"><div class="hidden-area">&nbsp;</div></div>
+							<p style="font-size:11px;text-align:center">
+								<em>This data is for information only and not in any way an investment advice</em>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col col2">
+					<div class="box box02 hp-quick-trade-box">
+						<div class="box-content direction-area">
+							<h3>Trade in 3 quick steps</h3>
+							<form action="#" class="form">
+								<fieldset>
+									<div class="row">
+										<label><strong>1.</strong> Instrument</label>
+										<div class="row-control">
+											<select class="combobox" id="QuickCurrencyTypes">
+												<option value="1.1996">EURUSD</option>
+												<option value="1.3532">GBPUSD</option>
+												<option value="111.5">USDJPY</option>
+												<option value="0.9774">USDCHF</option>
+												<option value="1.2456">USDCAD</option>
+												<option value="0.7843">AUDUSD</option>
+												<option value="0.7197">NZDUSD</option>
+												<option value="1.1725">EURCHF</option>
+												<option value="0.8864">EURGBP</option>
+												<option value="133.76">EURJPY</option>
+												<option value="87.38">AUDJPY</option>
+												<option value="1.5298">EURAUD</option>
+												<option value="1.4943">EURCAD</option>
+												<option value="7.8226">USDHKD</option>
+												<option value="1.3323">USDSGD</option>
+												<option value="0.9767">AUDCAD</option>
+												<option value="0.7666">AUDCHF</option>
+												<option value="89.46">CADJPY</option>
+												<option value="0.7842">CADCHF</option>
+												<option value="1.3225">GBPCHF</option>
+												<option value="113.95">CHFJPY</option>
+												<option value="150.84">GBPJPY</option>
+												<option value="80.18">NZDJPY</option>
+												<option value="0.896">NZDCAD</option>
+												<option value="0.7029">NZDCHF</option>
+												<option value="7.4456">EURDKK</option>
+												<option value="1.6665">EURNZD</option>
+												<option value="6.2074">USDDKK</option>
+												<option value="3.7997">USDTRY</option>
+												<option value="1.0893">AUDNZD</option>
+												<option value="1.7245">GBPAUD</option>
+												<option value="1.6852">GBPCAD</option>
+												<option value="1.8799">GBPNZD</option>
+												<option value="9.6405">EURNOK</option>
+												<option value="4.1824">EURPLN</option>
+												<option value="9.8127">EURSEK</option>
+												<option value="309.46">EURHUF</option>
+												<option value="3.4866">USDPLN</option>
+												<option value="8.0382">USDNOK</option>
+												<option value="8.1786">USDSEK</option>
+												<option value="258.12">USDHUF</option>
+												<option value="19.282">USDMXN</option>
+												<option value="12.4421">USDZAR</option>
+												<option value="0">USDRUB</option>
+												<option value="21.298">USDCZK</option>
+												<option value="1320.75">XAUUSD</option>
+												<option value="17.055">XAGUSD</option>
+												<option value="63.52">CL</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<label><strong>2.</strong> Amount</label>
+										<div class="row-control">
+											<input type="text" id="QuickAmount">
+										</div>
+									</div>
+									<div class="row row-wlabel mtm10">
+										<label><strong>3.</strong> Choose order type</label>
+									</div>
+									<div class="row buttons">
+										<div class="fl-l reversed col-xs-6">
+											<a href="https://bwm.sirixtrader.com/?guestMode=true&langKey=en" class="btn-type02 button4 btn-md2 btn-font02 btn-block"><span><span><span><strong class="mr15 reversed">BUY</strong> <span id="quickBuy">4.30885</span></span></span></span></a>
+										</div>
+										<div class="fl-l reversed col-xs-6">
+											<a href="https://bwm.sirixtrader.com/?guestMode=true&langKey=en" class="btn-type02 button5 btn-md2 btn-font02 btn-block"><span><span><span><strong class="mr15 reversed">SELL</strong> <span id="quickSell">4.31039</span></span></span></span></a>
+										</div>
+									</div>
+									<div class="result-box mb20">
+										<div id="resultMessage">
+											<p>You want to buy <span id="buyValue">1</span> <span id="buyCurrency">EUR</span> and to sell <span id="sellValue">4.30885</span> <span id="sellCurrency">PLN</span> at <span id="sellValue2">4.31039</span></p>
+										</div>
+									</div>
+									<div class="row button-row">
+										<a href="https://bwm.sirixtrader.com/?guestMode=true&langKey=en" class="btn-type02 button2 btn-md"><span><span><span>TRADE</span></span></span></a>
+									</div>
+									<div class="risk ta-center">Trading in Forex and CFDs could lead to loss of all your invested capital</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="box box02">
+						<div class="box-content direction-area">
+							<h3><i class="ico-rates">&nbsp;</i>MARKET RATES</h3>
+							<div class="widget-holder">
+								<div id="marketrates_grid_widget"><div class="hidden-area">&nbsp;</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type='text/javascript'>
+			(function () {
+				var wLang = "en";
+				var clientUrl = 'https://widget.forexwebservices.com';
+				var js = document.createElement('script');
+				js.type = 'text/javascript';
+				js.async = true;
+				js.src = clientUrl + '/PageScripts/GetJavaScript/?files=Framework.jQuery.Tpl.js;Social.Feed.Widget.js;TopPerformers.Widget.js;FeaturedUser.Widget.js;RatesEngine.js;MarketRates.Grid.Widget.js;MarketRates.Ticker.Widget.js;&callback=window.onLeverateWidgetsLoad';document.getElementsByTagName('head')[0].appendChild(js);
+				var css = document.createElement('link');
+				css.type = 'text/css';
+				css.async = true;
+				css.rel = 'stylesheet';
+				css.href = clientUrl + '/PageScripts/GetCss/?files=Social.Widget.css;TopPerformers.Widget.css;FeaturedUser.Widget.css;MarketRates.Grid.Widget.css;MarketRates.Ticker.Widget.css;';document.getElementsByTagName('head')[0].appendChild(css);
+				onLeverateWidgetsLoad = function () {
+					$("#social_feed_widget").leverateSocialFeed({
+						socialWidgetClientUrl: clientUrl,
+						fetchDataUrl: 'https://social-mt2.forexwebservices.com',
+						maxItems: 4,
+						language: wLang,
+						copyClick: function (item) { openWebtrader(); }
+					});
+					$("#marketrates_grid_widget").leverateMarketRatesGrid({
+						socialWidgetClientUrl: clientUrl,
+						language: wLang,
+						groups: {
+							Forex:['AUDUSD', 'EURCHF', 'EURGBP', 'EURJPY', 'EURNOK', 'EURTRY', 'EURUSD', 'GBPCAD', 'GBPJPY', 'GBPUSD', 'NZDUSD', 'USDCAD', 'USDCHF', 'USDJPY', 'USDTRY', 'XAGUSD', 'XAUUSD', 'USDILS', 'AUDCAD', 'AUDCHF', 'AUDNZD', 'GBPAUD', 'USDINR'],
+							Commodities:['COPPER','NICKEL', 'ZINC', 'TIN', 'LEAD', 'ALUMINIUM', 'TADAWUL', 'WTI', 'SUG11-JAN16', 'Gold','BRENT-JAN16',  'BRENT-JAN16',  'Silver', 'Suger', 'Oil'],
+							Indices:['AEX', 'NK', 'SP', 'TA25', 'FTSE', 'DAX30', 'IBEX', 'WIG', 'DJIA', 'JNJ', 'MSFT', 'GE', 'AIG', 'TSX', 'CATER', 'JPM', 'CAC40', 'BRSP', 'MEX', 'HANG', 'SPMIB', 'BEL', 'ISE100', 'CAC', 'DAX', 'DOW', 'FTSE-JAN16', 'NSDQ', 'SP-JAN16', 'CL-JAN16', 'SP500'],
+							Stocks:['DISNEY', 'IBM', 'YAHOO', 'TOPIX', 'AMEX', 'BOEING', 'MCDON', 'GOOGLE', 'APPLE', 'BOA', 'COKE', 'HPACK', 'INTEL', 'PFIZER', 'WMART', 'FACEBOOK',]
+						},
+						updateInterval:5
+					});
+				}
+			})();
+			function openWebtrader() {
+				var open_link = window.open('', '_blank');
+				open_link.location = '/webtrader-autologin';
+			}
+		</script>
+	</body>
+</html>

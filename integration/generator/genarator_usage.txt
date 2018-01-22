@@ -1,0 +1,42 @@
+/**
+ * SoapProxy
+ *
+ * Copyright (c) 2011 Przemek Berezowski (przemek@otn.pl) 
+ * All rights reserved.
+
+ * @category	  Library
+ * @package  	  SoapProxy
+ * @copyright     Copyright (c) 2011 Przemek Berezowski (przemek@otn.pl)
+ * @version       0.9
+ * @license       New BSD License
+ */
+ 
+Generating soap proxy classes:
+1. Create instance of SoapProxyGenerator
+	First param points to webservice WSDL
+	Second param contains options for php SoapClient - may by skipped
+
+2. Set serviceAlias for code generation
+	serviceALias will be used as a name of generated proxy class 
+	(default if not set is service)
+
+3. Set typePrefix for code generation
+	typePrefix will be used to prefixing sopa types name in generated types classess
+	(default if not set is empty string)
+	
+4. Set outputFile if you need generated code to be saved to file
+	You should specify valid file path
+	
+	If this filed is not set, result will not be saved instead of
+	it will be displayed on the screen.
+	
+5. Run generateCode method for code generating.
+
+6. If your ws contains types witch are derived from other types
+you can try to use EXPERIMENTAL switch to generete proper class tree structure.
+To do this set the $tryFindBase property to true on SoapProxyGenerator object.
+
+In the example I've used open service on address
+http://www.deeptraining.com/webservices/weather.asmx
+
+I cant assure that above WS is working. I used this only for example purposes. 
